@@ -1,0 +1,16 @@
+langchain
+groq
+python-dotenv
+pypdf
+pandas
+langchain_groq
+langchain_community
+langchain_huggingface
+langchain_chroma
+docx2txt
+torch
+openai-whisper
+protobuf==3.20.*
+moviepy
+uvicorn==0.32.0
+fastapi==0.115.4
