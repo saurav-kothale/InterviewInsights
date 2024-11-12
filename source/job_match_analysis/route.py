@@ -11,20 +11,13 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from dotenv import load_dotenv
 import shutil
-from model.model import llm, embeddings
+from source.model.model import llm, embeddings
 from fastapi.responses import StreamingResponse
 from io import StringIO
 
 job_router = APIRouter()
 
 load_dotenv()
-
-class JobDescription(BaseModel):
-    title: str
-    description: str
-
-class JobDescriptionsRequest(BaseModel):
-    job_descriptions: List[JobDescription]
 
 
 # Define prompt for matching resume with job descriptions
